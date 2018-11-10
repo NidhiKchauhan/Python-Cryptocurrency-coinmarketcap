@@ -2,7 +2,7 @@ import math
 import json
 import locale
 import requests
-fom prettytable import PrettyTable
+from prettytable import PrettyTable
 
 locale.setlocale(locale.LC_ALL, 'en-US.UTF-8')
 
