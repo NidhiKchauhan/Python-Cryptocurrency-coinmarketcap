@@ -5,9 +5,7 @@ from prettytable import PrettyTable
 from colorama import Fore, Back, Style
 
 convert = 'USD'
-
 global_url = 'https://api.coinmarketcap.com/v2/global/?convert=' + convert
-
 request = requests.get(global_url)
 results = request.json()
 data = results['data']
@@ -90,7 +88,6 @@ while True:
                        str(hour_change),
                        str(day_change),
                        str(week_change)])
-
     print()
     print(table)
     print()
